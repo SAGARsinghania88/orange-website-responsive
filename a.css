@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#left{
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+#lnavr{
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+}
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+}
+#lnavr i{
+    color: #1c96e8;
+}
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+#textcenter h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+#textcenter p{
+    opacity: .6;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#textcenter a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid olivedrab;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .6;
+}
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+}
+#rtop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: royalblue;
+}
+#rbottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(orange3.avif);
+    background-position: center;
+    background-size: cover;
+}
+#rtopleft{
+    width: 55%;
+    height: 100%;
+    background-image: url(photo-1557800636-894a64c1696f.avif);
+    background-position: center;
+    background-size: cover;
+}
+#rtopright{
+    width:45%;
+    height: 100%;
+    background-image: url(orange2.avif);
+    background-position:bottom;
+    background-size: cover;
+}
+@media (max-width:600px) {
+    #main{
+        flex-direction: column;
+    }
+    #lnav i{
+        font-size: 5vw;
+    }
+    #lnavr a{
+        font-size: 3vw;
+        border-bottom: 2px solid orange;
+    }
+    #textcenter{
+        margin-top: 3vh;
+    }
+    #textcenter h1{
+        font-size: 20vw;
+        position: relative;
+        right: 1.5vw;
+        background: -webkit-linear-gradient(rgb(236, 192, 110), rgb(241, 143, 30));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    #textcenter p{
+        font-size: 2.8vw;
+    }
+    #textcenter a{
+        font-size: 2.8vw;
+    }    
+    #main #left{
+        width: 100%;
+    } 
+    #main #right{
+        width: 100%;
+    }
+}
